@@ -1,0 +1,33 @@
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15%;
+}
+
+.logcard{
+    padding: 40px 0;
+    margin: 20% 25%;
+}
+
+.title{
+    text-align: center;
+}
+
+.slide{
+    border: 1px solid black;
+    margin: 10% 15%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content:space-around;
+}
+
+.menucontent{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}

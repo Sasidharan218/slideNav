@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+/* import Home from './components/home';
+import Log from './components/login';
 import './App.css';
+import { BrowserRouter,Route, Routes } from 'react-router-dom';
+import '@fontsource/roboto/400.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Log/>}/>
+        <Route path='/home' element={<Home/>}/>
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
+
+export default App; */
+  
+
+// App.js
+import React from 'react';
+import { SlideProvider } from './components/slidecontext';
+import HomePage from './components/home';
+
+import '@fontsource/roboto/400.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+const App = () => {
+  return (
+    <SlideProvider>
+      <div>
+        <HomePage />
+      </div>
+    </SlideProvider>
+  );
+};
 
 export default App;
